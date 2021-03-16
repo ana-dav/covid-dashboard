@@ -1,3 +1,3 @@
 # React App Project
 
-## Build link -
+## Build link -https://dashboard-covid.netlify.app/
