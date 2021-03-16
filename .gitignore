@@ -1,0 +1,7 @@
+# dependencies
+/node_modules
+.eslintcache
+.prettierignore
+
+# production
+/build

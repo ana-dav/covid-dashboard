@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper__sheets_global {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.wrapper__frame {
+  margin: 5px;
+  border: 1px solid gray;
+}
+
+@media only screen and (max-width: 850px) {
+  .wrapper {
+    flex-direction: column;
+    &__sheets_global {
+      width: 95%;
+      margin: auto;
+    }
+  }
+}
