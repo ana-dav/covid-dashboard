@@ -208,7 +208,7 @@ function Map({ data, countryData }) {
     }
   }, [data, countryData]);
 
-  return <div id='map' className={styles.map} />;
+  return <div id="map" className={styles.map} />;
 }
 
 Map.propTypes = {

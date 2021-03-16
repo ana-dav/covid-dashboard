@@ -8,11 +8,11 @@ const Button = ({ btnMargin, onClick }) => {
 
   return (
     <button
-      type='button'
+      type="button"
       className={styles.resizeButton}
       onClick={onClick}
       style={{ margin }}>
-      <img className={styles.expand} src={expand} alt='expand' />
+    <img className={styles.expand} src={expand} alt="expand" />
     </button>
   );
 };

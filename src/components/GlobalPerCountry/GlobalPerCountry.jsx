@@ -74,7 +74,7 @@ const GlobalPerCountry = (api) => {
             if (i === index) {
               caseTemp = singleCase;
               return caseTemp;
-            }            
+            }
             return null;
           });
           return caseTemp;
@@ -148,11 +148,11 @@ const GlobalPerCountry = (api) => {
           : styles.container__regularSize
       }
     >
-      <Button margin='0 0 0 320px' onClick={resize} />
+      <Button margin="0 0 0 320px" onClick={resize} />
       <input
         className={styles.search}
-        type='text'
-        placeholder='Enter country'
+        type="text"
+        placeholder="Enter country"
         onChange={handleSearchInputChanges}
         value={searchCountry}
       />
@@ -163,7 +163,7 @@ const GlobalPerCountry = (api) => {
               className={styles.list__countries_item}
               key={value.id}
               onClick={handleCountryPicker(index)}
-              role='presentation'
+              role="presentation"
               tabIndex={index}
               style={{
                 backgroundColor:
@@ -175,7 +175,7 @@ const GlobalPerCountry = (api) => {
               }}
             >
               <div className={styles.wrapper}>
-                <img src={flag[index]} alt='' />
+                <img src={flag[index]} alt="" />
                 <p>{country[index]}</p>
                 <p>
                   {sliderIndex === 0

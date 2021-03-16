@@ -124,7 +124,7 @@ function Chart({ dailyData }) {
     chart.scrollbarX = new am4core.Scrollbar();
   }, [dailyData]);
 
-  return <div id='chart' className={styles.chart} />;
+  return <div id="chart" className={styles.chart} />;
 }
 
 Chart.propTypes = {
