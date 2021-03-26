@@ -1,20 +1,20 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   TotalCases,
   GlobalPerCountry,
   Map,
   Chart,
   TotalTable,
-} from "./components";
-import { fetchData, fetchCountryData, fetchDailyData } from "./api";
+} from './components';
+import { fetchData, fetchCountryData, fetchDailyData } from './api';
 import {
   CountryNameContext,
   CountryCasesContext,
   CountryRecoveredContext,
   CountryDeathsContext,
   Global,
-} from "./context/CountryContext";
-import styles from "./App.module.scss";
+} from './context/CountryContext';
+import styles from './App.module.scss';
 
 const App = () => {
   const [data, setData] = useState({});
@@ -32,35 +32,35 @@ const App = () => {
       countryName,
       setCountryName,
     }),
-    [countryName, setCountryName]
+    [countryName, setCountryName],
   );
   const providerCases = useMemo(
     () => ({
       countryCases,
       setCountryCases,
     }),
-    [countryCases, setCountryCases]
+    [countryCases, setCountryCases],
   );
   const providerRecovered = useMemo(
     () => ({
       countryRecovered,
       setCountryRecovered,
     }),
-    [countryRecovered, setCountryRecovered]
+    [countryRecovered, setCountryRecovered],
   );
   const providerDeaths = useMemo(
     () => ({
       countryDeaths,
       setCountryDeaths,
     }),
-    [countryDeaths, setCountryDeaths]
+    [countryDeaths, setCountryDeaths],
   );
   const providerIsGlobal = useMemo(
     () => ({
       isGlobal,
       setIsGlobal,
     }),
-    [isGlobal, setIsGlobal]
+    [isGlobal, setIsGlobal],
   );
 
   useEffect(() => {
@@ -91,7 +91,7 @@ const App = () => {
                     <GlobalPerCountry countryData={countryData} />
                   </div>
                 </div>
-                <div>
+                <div className={styles.wrapper__charts}>
                   <Map data={data} countryData={countryData} />
                   <Chart dailyData={dailyData} />
                 </div>

@@ -14,6 +14,10 @@
   border: 1px solid gray;
 }
 
+.wrapper__charts {
+  width: 60%;
+}
+
 @media only screen and (max-width: 850px) {
   .wrapper {
     flex-direction: column;
